@@ -1,0 +1,170 @@
+:root{
+    --accent-color: gray;
+    --background-color: #EAEDED;
+    --dark-color: #212121;
+}
+
+.listingTitle:hover{
+    cursor: pointer;
+}
+
+/* 1 */
+.my-listing-page{
+    /* background-color: var(--darkGray); */
+    /* background-color: #142850; */
+    background-color: var(--background-color);
+    width: 100%;
+    height: -o-calc(100vh - 95px); 
+    min-height: 600px;
+    height: -webkit-calc(100vh - 95px); 
+    height: -moz-calc(100vh - 95px); 
+}
+
+/* 2 */
+.my-listing-parent-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* background-color: black; */
+    padding: 2% 5%;
+    /* position: relative; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: brown; */
+}
+
+/* 3 */
+.my-listing-inner-container{
+    width: 80%;
+    height: 90%;
+    /* background-image: linear-gradient( 
+    140deg, rgba(29, 26, 30, 0.9), rgba(70, 59, 78, 0.75)); */
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    /* background-color: yellow; */
+    font-size: 15px;
+}
+table{
+    width: 100%;
+    color: white !important;
+    table-layout: fixed !important;
+    width: 100% !important;
+    text-align: center;
+    table-layout: auto;
+}
+td{
+    vertical-align:middle;
+}
+
+.btn{
+    font-size: 15px !important;
+    /* width: 70% !important; */
+}
+
+th{
+    color: black !important;
+}
+
+.edit-delete-listing{
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+    justify-content: space-evenly;
+    vertical-align: middle !important;
+    height: 100% !important;
+}
+
+
+.post-form{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.post-details, .post-image{
+    width: 50%;
+    height: 100%;
+}
+
+.post-image{
+    background-color: rgba(255, 255, 255, .25);
+    /* background-color: brown; */
+    background-color: darkslategray;
+}
+
+.post-details h1{
+    font-size: 35px;
+}
+.post-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-details{
+    color: var(--background-color);
+}
+.post-details input[type=email], 
+.post-details input[type=password],
+.post-details input[type=email], 
+.post-details input[type=password],
+.post-details input[type=text],
+.post-details input[type=number],
+.post-details select,
+.post-details textarea{
+    width: 90%;
+    border: 0;
+    font-size: 20px;
+    text-align: left;
+    padding: 5px 10px !important;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: var(--background-color);
+    color: var(--dark-color);
+}
+
+.post-details textarea:focus{
+    color: Green !important;
+}
+
+.post-details textarea{
+    resize: none;
+}
+
+.post-details input[type=submit]{
+    font-size: 20px;
+    border-radius: 5px;
+    /* background-color: rgba(176,38,255,1); */
+    background-color: darkslategray;
+    padding: 5px 30px;
+    margin-top: 10px;
+    transition: padding 1s;
+}
+
+.post-details input[type=submit]:active{
+    padding: 10px 40px;
+}
+
+@media screen and (max-width: 1000px) {
+    .post-details{
+        width: 100%;
+        height: 100%;
+    }
+    .post-image{
+        width: 0%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .create-listing-parent-container{
+        /* background-color: red; */
+        padding: 2% 1%;
+    }
+}
